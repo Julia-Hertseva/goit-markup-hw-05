@@ -15,7 +15,7 @@
         <nav class="navigation">
             <a class="logotype" href="/"><span class="web">Web</span>Studio</a>
             <ul class="navigation-list">
-                <li class="navigation-list-item current-item">
+                <li class="navigation-list-item">
                     <a class="navigation-list-link current" href="#">Студия</a>
                 </li>
                 <li class="navigation-list-item">
@@ -48,7 +48,7 @@
         <!-- Hero -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="service-btn" type="button">Заказать услугу</button>
+            <button class="service-btn" type="button" data-modal-open>Заказать услугу</button>
         </section>
         <!--Our advantages-->
         <section class="advantages">
@@ -101,13 +101,15 @@
             <ul class="doing-list">
                 <li class="doing-list-item">
                     <img class="doing-list-img" src="./images/our-doing/computer.jpg" alt="Компьютер" width="370" height="294">
-                    
+                    <p class="description-doing">Десктопные приложения</p>
                 </li>
                 <li class="doing-list-item">
                     <img class="doing-list-img" src="./images/our-doing/smartphone.jpg" alt="Смартфон" width="370" height="294">
+                    <p class="description-doing">Мобильные приложения</p>
                 </li>
                 <li class="doing-list-item">
                     <img class="doing-list-img" src="./images/our-doing/tablet.jpg" alt="Планшет" width="370" height="294">
+                    <p class="description-doing">Дизайнерские решения</p>
                 </li>
             </ul>
             </div>
@@ -374,6 +376,14 @@
         </div>
     </div>
     </footer>
+
+    <div class="backdrop" is-hidden data-modal>
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorum nemo ipsa iure atque laudantium amet soluta deserunt non temporibus aliquid sint vero enim error, sapiente blanditiis similique reiciendis esse?</p>
+        <button data-modal-close>Закрыть</button>
+        </div>
+    </div>
+    <script src="./js/modal.js></script>
 </body>
 </html>
 

@@ -207,16 +207,17 @@ footer {
 
 .navigation-list-link.current {
   color: var(--accent-color);
+  position: relative;
 }
 
 .navigation-list-link.current::after {
-  display: block;
   content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
-  /* top: 27px; */
-
-  /* width: 48px; */
+  width: 100%;
 }
 
 .address-list-link {
@@ -401,6 +402,28 @@ footer {
 .doing-list-item {
   margin-left: 15px;
   margin-right: 15px;
+  position: relative;
+}
+
+.description-doing {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: var(--text-font);
+  color: var(--main-bg-color);
+
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 /* ========== END DOING ========== */
 
