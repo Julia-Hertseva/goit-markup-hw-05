@@ -299,7 +299,6 @@ footer {
   height: 50px;
   padding: 10px 32px;
   border-radius: 4px;
-  /* margin-bottom: 200px; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -311,8 +310,6 @@ footer {
 
 .service-btn:hover,
 .service-btn:focus {
-  /* background-color: var(--accent-color);
-  color: #ffffff; */
   cursor: pointer;
 }
 /* ========== END HERO ========== */
@@ -320,8 +317,6 @@ footer {
 /* ========== ADVANTAGES ========== */
 
 .advantages {
-  /* display: block; */
-  /* height: 289px; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -475,14 +470,6 @@ footer {
   padding-right: 32px;
 }
 
-/* .social-icon {
-  margin: 0 auto;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-bottom: 30px;
-  background-color: var(--main-bg-color);
-} */
-
 .team-name {
   color: var(--title-text-color);
   font-weight: 500;
@@ -491,7 +478,6 @@ footer {
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
-  /* padding-top: 30px; */
 }
 
 .team-position {
@@ -617,8 +603,6 @@ footer {
 .footer-logo {
   padding: 0;
   margin: 0;
-  /* width: 145px;
-  height: 31px; */
 }
 
 .footer-address-item.mail {
@@ -628,7 +612,6 @@ footer {
 
 .footer-address-list {
   width: 231px;
-  /* height: 81px; */
   margin-right: 0;
   margin-top: 20px;
 }
@@ -698,17 +681,11 @@ footer {
 }
 .portfolio-list {
   display: flex;
-  /* width: 611px;
-  height: 54px; */
   margin-bottom: 50px;
   justify-content: center;
   /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
-}
-
-.portfolio-list-item {
-  /* height: 38px; */
 }
 
 .portfolio-list-item:not(:last-child) {
@@ -748,7 +725,6 @@ footer {
 .cards-list {
   /* width: calc((100%-60px) / 3); */
   width: 370px;
-  /* height: 404px; */
   border: 1px solid #eeeeee;
   margin-right: 30px;
 }
@@ -828,64 +804,44 @@ footer {
 
 /* ======== MODAL WINDOW ======== */
 
-.backdrop.is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
 .backdrop {
-  display: flex;
-  position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  transition: opacity0 0.2s ease-in; */
-  width: 528px;
-  height: 581px;
-  left: 536px;
-  top: 221px;
+  transition: all 250ms linear;
 }
 
 .modal {
-  position: relative;
-  /* width: auto;
-  margin: 10px;
-  transition: opacity 0.3s ease-in; */
-  display: flex;
-  /* background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  left: 536px;
-  top: 221px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
-.modal__btn-close {
-  float: right;
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 0.5;
-  text-decoration: none;
-}
-
-.modal__btn-close:focus,
-.modal__btn-close:hover {
-  color: #000;
-  text-decoration: none;
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  opacity: 0.75;
 }
 
 /* ======= END MODAL WINDOW ======= */
